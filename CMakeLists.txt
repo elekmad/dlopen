@@ -23,4 +23,4 @@ if (C99_SUPPORTED)
     set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -std=c99")
 endif()
 
-set( CMAKE_C_FLAGS_DEBUG   " -ggdb3" )
+set( CMAKE_C_FLAGS_DEBUG   "-ggdb3" )
