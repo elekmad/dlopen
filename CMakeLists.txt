@@ -14,7 +14,7 @@ add_library(DLLib1 SHARED dllib1.c)
 project(MyProject)
 add_executable(MyProject main.c)
 add_dependencies(MyProject SharedLib1)
-target_link_libraries (MyProject "-L. -lSharedLib1")
+target_link_libraries (MyProject SharedLib1)
 target_link_libraries (MyProject "-ldl")
 
 include(CheckCCompilerFlag)
@@ -24,11 +24,3 @@ if (C99_SUPPORTED)
 endif()
 
 set( CMAKE_C_FLAGS_DEBUG   " -ggdb3" )
-
-#Déclaration de l'exécutable
-
-#find_package(SDL2 REQUIRED)
-#if (SDL2_FOUND)
-#  include_directories(${SDL2_INCLUDE_DIR})
-#  target_link_libraries (MyProject ${SDL2_LIBRARY})
-#endif (SDL2_FOUND)
