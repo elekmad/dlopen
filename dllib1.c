@@ -1,6 +1,6 @@
 
 
-int dlop1(int arg)
+char *dlop1(void)
 {
-    return arg * 10;
+    return "passage dans dlop1 de "__FILE__;
 }

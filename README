@@ -1,0 +1,8 @@
+Pour l'utiliser :
+export LD_LIBRARY_PATH=. #va dire que les librairies dynamiques sont dans le dossier courant.
+./MyProject
+
+le main se charge, grâce à libdl, d'ouvrir libDLLib1.so et de trouver dlop1 qu'il exécute ensuite.
+libSharedLib1.so étant linkée dynamiquement, sera chargée à la volée, et utilisée aussi dans le main.
+
+LD_PRELOAD=./libSharedLib2.so ./MyProject (nombre) # précharge ./libSharedLib2.so qui vient donc remplacer libSharedLib1.so puisque contient les mêmes symboles.

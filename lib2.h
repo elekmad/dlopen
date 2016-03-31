@@ -1,5 +1,5 @@
-#ifndef __LIB1_H__
-#define __LIB1_H__
+#ifndef __LIB2_H__
+#define __LIB2_H__
 
 char *op1(void);
 

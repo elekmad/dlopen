@@ -1,6 +1,6 @@
 #ifndef __DLLIB1_H__
 #define __DLLIB1_H__
 
-int dlop1(int);
+char *dlop1(void);
 
 #endif// __DLLIB1_H__

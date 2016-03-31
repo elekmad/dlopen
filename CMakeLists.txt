@@ -5,6 +5,8 @@ cmake_policy(SET CMP0004 OLD)
 project (SharedLib1)
 add_library(SharedLib1 SHARED lib1.c)
 
+project (SharedLib2)
+add_library(SharedLib2 SHARED lib2.c)
 
 project (DLLib1)
 add_library(DLLib1 SHARED dllib1.c)
